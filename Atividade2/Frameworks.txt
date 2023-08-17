@@ -1,0 +1,90 @@
+ATIVIDADE 2 DE PWEB - RAVENA
+
+1.	INTRODUÇÃO
+
+Frameworks desempenham um papel fundamental no cenário de desenvolvimento de software moderno, oferecendo estruturas abstratas e conjuntos de ferramentas que capacitam os desenvolvedores a criar aplicações de alta qualidade de maneira mais eficiente. A evolução constante da tecnologia e das demandas dos usuários tornou o desenvolvimento de software uma tarefa cada vez mais complexa. Nesse contexto, os frameworks surgem como soluções que proporcionam uma base sólida para a construção de software, permitindo que os desenvolvedores se concentrem nas partes únicas e inovadoras de suas aplicações.
+
+2.	O Conceito de Frameworks
+
+Um framework pode ser compreendido como um esqueleto ou estrutura que oferece um conjunto de diretrizes, abstrações e componentes reutilizáveis para desenvolver softwares. Ele define a arquitetura geral da aplicação e fornece soluções para problemas recorrentes, como comunicação com bancos de dados, gerenciamento de rotas, interação com interfaces de usuário e muito mais.
+
+3.	Vantagens dos Frameworks
+
+3.1.	Padronização: Frameworks promovem a adoção de padrões de desenvolvimento, levando a um código mais consistente e legível.
+3.2.	Reutilização: Componentes pré construídos e bibliotecas incorporadas em frameworks permitem reutilizar código, economizando tempo e esforço.
+3.3.	Produtividade: Ao lidar com tarefas repetitivas, os desenvolvedores podem se concentrar em aspectos mais criativos e inovadores do projeto.
+
+3.4.	Manutenção Simplificada: Atualizações e correções podem ser aplicadas globalmente no framework, impactando todas as partes do projeto.
+
+3.5.	Escalabilidade: A arquitetura definida pelo framework muitas vezes facilita o dimensionamento da aplicação à medida que a demanda cresce.
+
+4.	Tipos e exemplos de Frameworks
+
+4.1.	WEB FRAMEWORKS
+
+Projetados para desenvolvimento web, esses frameworks oferecem estruturas para criar interfaces de usuário e gerenciar a lógica do servidor. 
+
+Exemplos:
+
+•	Ruby on Rails: Um framework de backend em Ruby que segue o padrão MVC e enfatiza a simplicidade e a produtividade.
+•	Django: Um framework de backend em Python conhecido por sua abordagem pragmática e segura para o desenvolvimento web.
+•	ASP.NET: Um framework de backend da Microsoft para o desenvolvimento de aplicativos web robustos usando tecnologias como C# e Visual Basic.
+•	Express.js: Um framework de backend leve para Node.js que simplifica a criação de APIs e aplicativos web.
+
+4.2.	FRONTEND FRAMEWORKS
+
+Concentram-se em construir interfaces de usuário interativas e responsivas, como o Angular e o React. 
+
+Exemplos:
+•	React: Uma biblioteca JavaScript de frontend mantida pelo Facebook, focada em criar interfaces de usuário interativas e reativas.
+•	Angular: Um framework de frontend da Google que oferece uma abordagem completa para o desenvolvimento de aplicações web dinâmicas.
+•	Vue.js: Um framework de frontend progressivo que permite construir interfaces de usuário de forma incremental, adaptando-se às necessidades do projeto.
+
+4.3.	MOBILE FRAMEWORKS
+
+Especializados em desenvolvimento de aplicativos móveis, como o Flutter e o Xamarin. 
+
+Exemplos:
+
+•	Flutter: Um framework da Google para criar aplicativos nativos para iOS e Android a partir de um único código-base.
+•	React Native: Um framework baseado em React para desenvolver aplicativos móveis nativos usando JavaScript e React.
+•	Xamarin: Uma plataforma da Microsoft para criar aplicativos móveis nativos usando C# e .NET.
+
+4.4.	BACKEND FRAMEWORKS
+
+Fornecem estruturas para criar a lógica de negócios e interações com bancos de dados, como o Spring para Java e o Express.js para Node.js. 
+
+Exemplos:
+
+•	Spring Boot: Uma extensão do framework Spring para o desenvolvimento rápido de aplicativos Java, com configuração automática.
+•	Laravel: Um framework de backend em PHP que enfatiza a sintaxe elegante e recursos avançados.
+•	Ruby on Rails: Como mencionado anteriormente, é um framework de backend em Ruby que simplifica o desenvolvimento web.
+
+4.5.	TEST AUTOMATION FRAMEWORKS:
+
+Estruturas que automatizam testes de software de forma organizada, oferecendo diretrizes, reutilização de código e relatórios detalhados. Exemplos incluem Selenium e JUnit. Eles agilizam a detecção de erros e garantem a qualidade do software de maneira eficiente. 
+
+Exemplos:
+
+•	Selenium: Um framework para automatizar testes em navegadores web, suportando várias linguagens de programação.
+•	JUnit: Um framework de teste de unidade para Java, amplamente utilizado para automatizar testes em código Java.
+•	Cypress: Um framework de teste end-to-end para aplicativos web modernos, com uma abordagem simples e intuitiva.
+
+5.	CONCLUSÃO
+
+Frameworks são ferramentas indispensáveis no mundo do desenvolvimento de software, capacitando os desenvolvedores a criar aplicações robustas e escaláveis de maneira mais eficiente. Eles proporcionam uma estrutura sólida e reutilizável que impulsiona a produtividade, promove padrões de qualidade e permite inovação em projetos de todos os tamanhos.
+
+
+
+
+
+6.	REFERÊNCIAS:
+
+Entenda o que é Framework. Gaea, [s.d.]. Disponível em: <https://gaea.com.br/entenda-o-que-e-framework/>. Acesso em: 16 de agosto de 2023
+
+CanalTI. Framework (O que é, vantagens, desvantagens, exemplos). Canal TI, 2018. Disponível em: <https://www.canalti.com.br/desenvolvimento-de-software/framework-o-que-e-vantagens-desvantagens-exemplos/>. Acesso em: 16 de agosto de 2023
+
+Maxwell. Framework: conceitos gerais. Puc-rio, [s.d.]. Disponível em: < https://www.maxwell.vrac.puc-rio.br/8623/8623_3.PDF>. Acesso em: 16 de agosto de 2023
+
+
+
