@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif, "times";
+    /* Assim dá para selecionar a cor manualmente quando passa o mouse em cima!!! */
+    background-color: #905e92;
+    /* background-color: pink; */
+}
+/* formulario */
+#formulario{
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f7def5;
+    /* borda solida é solid, tracejada é dashed */
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    max-width: 600px;
+}
+label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    /* se quiser que ocupe todo o espaço do form width: 100%; */
+}
+
+/* Campos de opções */
+input[type="radio"],
+input[type="checkbox"]
+{
+    margin-right: 5px;
+}
+
+/* botoes */
+input[type="submit"],
+input[type="reset"],
+button[tupe="button"]
+{
+    margin-right: 10px, 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; /*Define os cantos */
+    font-size: 14px;
+    color: #f5f1f4;
+    background-color: #270021;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="button"]
+{
+    background-color: #270021;
+    color: #f5f1f4;
+    padding: 10px;
+}
+
+select{
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14;
+    width: 50%;
+    margin-bottom: 100px;
+    background-image: linear-gradient(#db6ed2,  #e0bcdd);
+}
+
+/* quando selecionar o campo de seleção*/
+select:focus{
+    outline : 2px solid red;
+    border-color: #333333;
+}
+
+/* legenda dos campos */
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f000d;
+    margin-bottom: 20px;
+}
+
+/* mensagem de erro  */
+input:invalid{
+    border: 2px solid pink;
+}
+
+.rodape{
+    margin: 0 auto;
+    text-align: center;
+}
