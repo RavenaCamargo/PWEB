@@ -1,0 +1,70 @@
+/* Reset de estilos básicos para eliminar margens e preenchimentos padrão */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #3f0728;
+    color: #f7e7f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #720b47;
+    color: #f7e7f2;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f7e7f2;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f1dff0;
+    border: 1px solid #ccc;
+}
+
+article {
+    flex-basis: 45%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #3f0728;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
