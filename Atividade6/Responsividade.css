@@ -1,0 +1,79 @@
+
+.color-changing-div {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+@media (max-width: 1920px) {
+    .color-changing-div::before {
+        content: "Amarelo";
+    }
+    .color-changing-div {
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 1336px) {
+    .color-changing-div::before {
+        content: "Roxo";
+    }
+    .color-changing-div {
+        background-color: purple;
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .color-changing-div::before {
+        content: "Vermelho";
+    }
+    .color-changing-div {
+        background-color: red;
+    }
+}
+
+@media (max-width: 1024px) {
+    .color-changing-div::before {
+        content: "Rosa";
+    }
+    .color-changing-div {
+        background-color: pink;
+    }
+}
+
+@media (max-width: 768px) {
+    .color-changing-div::before {
+        content: "Laranja";
+    }
+    .color-changing-div {
+        background-color: orange;
+    }
+}
+
+@media (max-width: 420px) {
+    .color-changing-div::before {
+        content: "Cinza";
+    }
+    .color-changing-div {
+        background-color: gray;
+    }
+}
+
+.color-changing-div::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
