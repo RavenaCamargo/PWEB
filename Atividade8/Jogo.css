@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.choices {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    margin: 5px;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 200px;
+    border: 2px solid purple;
+    background-color: pink;
+}
+
