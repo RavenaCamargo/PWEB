@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    border: 50px solid purple;
+    background-color: pink;
+}
+
+#container {
+    width: 400px;
+    margin: 50px;
+}
+
+button {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.perguntas {
+    text-align: center;
+    margin-inline-end: 300px;
+}
+
+#results {
+    margin-top: 10px;
+    width: 300px;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 5px solid purple;
+    background-color: pink;
+}

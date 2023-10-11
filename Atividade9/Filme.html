@@ -1,0 +1,62 @@
+<!-- // Criando uma pesquisa
+// Durante o lançamento de um filme, 45 pessoas assistiram. Na saída
+// foi realizada uma pesquisa informando a idade, sexo e a opinião,
+// onde: ótimo=4, bom=3, regular=2, péssimo=1.
+// Fazer uma aplicação utilizando JavaScript que receba os dados
+// (idade, sexo e opinião) e retornar:
+//  a média da idade das pessoas que responderam ao questionário;
+//  a idade da pessoa mais velha;
+//  a idade da pessoa mais nova;
+//  a quantidade de pessoas que responderam péssimo;
+// a porcentagem de pessoas que responderam ótimo e bom;
+//  o número de mulheres e homens que responderam ao 
+// questionário -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Filme.js"></script>
+    <link rel="stylesheet" type="text/css" href="Filme.css">
+    <title>Pesquisa do filme</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Pesquisa sobre o filme Avatar: O caminho da água</h1>
+        <form id="survey-form">
+            <div class="perguntas">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" required><br>
+                
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" required>
+                    <option value="mulher">Mulher</option>
+                    <option value="homem">Homem</option>
+                </select><br>
+                
+                <label for="opiniao">Opinião:</label>
+                <select id="opiniao" required>
+                    <option value="4">Ótimo</option>
+                    <option value="3">Bom</option>
+                    <option value="2">Regular</option>
+                    <option value="1">Péssimo</option>
+                </select><br>
+            </div>
+
+            <button type="button" onclick="calcularResultados()">Registrar Resposta</button>
+        </form>
+
+        <div id="results">
+            <h2>Resultados:</h2>
+            <p>Média de Idade das pessoas: <span id="media-idade"></span></p>
+            <p>Pessoa mais velha: <span id="mais-velha"></span></p>
+            <p>Pessoa mais nova: <span id="mais-nova"></span></p>
+            <p>Pessoas que responderam Péssimo: <span id="pessimo-count"></span></p>
+            <p>Porcentagem de Ótimo e Bom: <span id="otimo-bom-percent"></span>%</p>
+            <p>Mulheres que responderam: <span id="mulher-count"></span></p>
+            <p>Homens que responderam: <span id="homem-count"></span></p>
+        </div>
+    </div>
+</body>
+</html>
