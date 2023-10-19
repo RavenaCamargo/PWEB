@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando objetos</title>
+</head>
+<body>
+    <script>
+        //Usando Object
+        var aluno1 = new Object();
+        aluno1.ra = "0030482123032 ";
+        aluno1.nome = "Ken";
+        alert("ra= " + aluno1.ra + "nome= " + aluno1.nome);
+
+        //usando {}
+        var aluno2 = {};
+        aluno2.ra = "0030482123033 ";
+        aluno2["nome"] = "Ravena";
+        //OU aluno2.nome = "Ravena";
+        alert("ra=" + aluno2.ra + "nome=" + aluno2.nome);
+
+        //literal
+        var aluno3 = {
+            ra: "0030482123034 ",
+            nome: "Rayane"
+        };
+        alert("ra=" + aluno3.ra + " nome=" + aluno3.nome);
+
+        //usando função construtora
+        function Aluno(ra, nome){
+            this.ra = ra;
+            this.nome = nome;
+
+            this.MostraDados = function () {
+                return "ra=" + this.ra + " nome=" + this.nome;
+            }
+        }
+        var aluno4 = new Aluno("0030482123035", "Dayane");
+        alert(aluno4.MostraDados());
+        // alert(aluno4.nome);
+
+        var aluno5 = {};
+        var nome_propriedade = "ra";
+        aluno5[nome_propriedade] = "0030482123036";
+        aluno5['nome'] = "Lauren";
+        alert(aluno5.ra + " " + aluno5.nome);
+
+        function Aluno2() {
+            var ra;
+            var nome;
+
+            this.setRa = function (value){
+                this.ra = value;
+            }
+            this.getRa = function () {
+                return this.ra;
+            }
+            this.setNome = function (value) {
+                this.nome = value;
+            }
+            this.getNome = function () {
+                return this.nome;
+            }
+        }
+        var aluno6 = new Aluno2();
+        aluno6.setNome("Denilce");
+        aluno6.setRa("0030482123037");
+        alert("ra=" + aluno6.getRa() + " nome=" + aluno6.getNome());
+    </script>
+</body>
+</html>
