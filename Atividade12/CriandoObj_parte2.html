@@ -1,0 +1,105 @@
+
+<!-- 2. Crie uma nova função tipo Conta, com as propriedades
+nome correntista, banco, numero da conta e saldo. Crie
+utilizando herança duas novas funções: Corrente com
+Saldo Especial e Poupanca com Juros, Data Vencimento.
+Receber os dados via get e set. Criar um objeto de cada
+uma: Corrente e Poupanca e mostrar os seus dados -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativ 12 - exercicio 2</title>
+</head>
+<body>
+    <script>
+        function Conta(correntista, banco, numeroConta, saldo) {
+            this.correntista = correntista;
+            this.banco = banco;
+            this.numeroConta = numeroConta;
+            this.saldo = saldo;
+    
+            this.setCorrentista = function (value) {
+                this.correntista = value;
+            }
+            this.getCorrentista = function () {
+                return this.correntista;
+            }
+    
+            this.setBanco = function (value) {
+                this.banco = value;
+            }
+            this.getBanco = function () {
+                return this.banco;
+            }
+    
+            this.setNumeroConta = function (value) {
+                this.numeroConta = value;
+            }
+            this.getNumeroConta = function () {
+                return this.numeroConta;
+            }
+    
+            this.setSaldo = function (value) {
+                this.saldo = value;
+            }
+            this.getSaldo = function () {
+                return this.saldo;
+            }
+        }
+    
+        function ContaCorrente(correntista, banco, numeroConta, saldo, SaldoEspecial) {
+            Conta.call(this, correntista, banco, numeroConta, saldo);
+            this.SaldoEspecial = SaldoEspecial;
+    
+            this.setSaldoEspecial = function (value) {
+                this.SaldoEspecial = value;
+            }
+    
+            this.getSaldoEspecial = function () {
+                return this.SaldoEspecial;
+            }
+        }
+    
+        function ContaPoupanca(correntista, banco, numeroConta, saldo, Juros, DataVencimento) {
+            Conta.call(this, correntista, banco, numeroConta, saldo);
+            this.Juros = Juros;
+            this.DataVencimento = DataVencimento;
+    
+            this.setJuros = function (value) {
+                this.Juros = value;
+            }
+            this.getJuros = function () {
+                return this.Juros;
+            }
+    
+            this.setDataVencimento = function (value) {
+                this.DataVencimento = value;
+            }
+            this.getDataVencimento = function () {
+                return this.DataVencimento;
+            }
+        }
+    
+        var contaCorrente = new ContaCorrente("Ravena", "Nubank", "12345", 1000, 500);
+        contaCorrente.setSaldoEspecial(1000);
+    
+        var contaPoupanca = new ContaPoupanca("Ravena", "Nubank", "67890", 2000, 0.05, "2023-12-31");
+        contaPoupanca.setJuros(0.06);
+        contaPoupanca.setDataVencimento("2024-01-31");
+    
+        alert("\nNome= " + contaCorrente.getCorrentista() +
+            "\nBanco= " + contaCorrente.getBanco() +
+            "\nNumero da Conta= " + contaCorrente.getNumeroConta() +
+            "\nSaldo= " + contaCorrente.getSaldo() +
+            "\nSaldo Especial= " + contaCorrente.getSaldoEspecial() +
+            "\nJuros= " + contaPoupanca.getJuros() +
+            "\nData de Vencimento= " + contaPoupanca.getDataVencimento()        
+        );
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!-- 1. Crie uma função construtora para o Retângulo receber
+(x,y) ou seja, base e altura, com um método para calcular
+a área. Criar um objeto e executar o método que calcula a
+área. Não precisa utilizar get e set na função construtora. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativ 12 - exercicio 1</title>
+</head>
+<body>
+    <script>
+        function Retangulo(base, altura){
+            this.base = base;
+            this.altura = altura;
+            
+            
+            this.CalculoArea = function () {
+                return Area = this.base * this.altura;
+            }
+        }
+        var Area = new Retangulo(10, 5);
+        alert(Area.CalculoArea());
+    </script>
+</body>
+</html>
