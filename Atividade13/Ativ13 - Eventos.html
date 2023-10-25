@@ -1,0 +1,50 @@
+<!-- Criar uma página que no carregamento mostra a janela
+fechada com um título “Abra a Janela”. Se mover com o mouse
+sobre a imagem da janela fechada, mostra a janela aberta
+(abre a janela), se sair com o mouse da imagem mostra a
+janela fechada (fecha a janela). Se clicar sobre a imagem
+mostra a imagem da janela quebrada (quebra a janela).
+Colocar um texto em um H1 informando “Janela aberta”,
+“Janela Fechada” ou “Janela Quebrada” -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Eventos.css">
+        <title>Eventos Java Script</title>
+    </head>
+    <body>
+        <h1 id="status">Abra a janela</h1>
+        <div id="janela"></div>
+
+        <script>
+            const janela = document.getElementById('janela');
+            const status = document.getElementById('status');
+            let janelaAberta = false;
+
+            janela.addEventListener('mouseover', () => {
+                if (!janelaAberta) {
+                    janela.style.backgroundImage = "url('JanelaAberta.jpg')"; // Imagem da janela aberta
+                    status.textContent = 'Janela Aberta';
+                }
+            });
+
+            janela.addEventListener('mouseout', () => {
+                if (!janelaAberta) {
+                    janela.style.backgroundImage = "url('JanelaFechada.jpg')"; // Imagem da janela fechada
+                    status.textContent = 'Janela Fechada';
+                }
+            });
+
+            janela.addEventListener('click', () => {
+                if (!janelaAberta) {
+                    janela.style.backgroundImage = "url('JanelaQuebrada.jpg')"; // Imagem da janela quebrada
+                    status.textContent = 'Janela Quebrada';
+                    janelaAberta = true;
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+#janela {
+    width: 600px;
+    height: 600px;
+    background-image: url('JanelaFechada.jpg'); /* Imagem da janela fechada */
+    background-size: cover;
+    cursor: pointer;
+}
+
